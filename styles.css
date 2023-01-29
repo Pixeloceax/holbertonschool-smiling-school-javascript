@@ -1,0 +1,215 @@
+:root {
+  /* max-width */
+  --max-width: 1150px;
+
+  /* colors */
+  --color-purple: #c271ff;
+  --color-dark: #071629;
+}
+
+* {
+  font-family: "Source sans pro", "Spin Cycle", "holberton_school-icon",
+    "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  color: white;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* colors */
+
+.purple-text {
+  color: var(--color-purple);
+}
+
+.black-text {
+  color: var(--color-dark);
+}
+
+/* hero section */
+
+.hero-section {
+  background-image: url("./images/pic_1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-section-pricing {
+  background-image: url("./images/pic_2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-section-courses {
+  background-image: url("./images/pic_3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* header */
+
+.header {
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+/*  nav */
+.logo-container {
+  float: left;
+}
+
+.logo-container img {
+  height: 2rem;
+}
+
+.logo-container img:first-child {
+  margin-right: 1rem;
+}
+
+.navbar-toggler-icon {
+  background-image: url("./images/hamburger_white.png") !important;
+}
+
+/* home page title */
+
+.home-page-title-margin {
+  margin: 5rem auto -1rem;
+}
+
+/* button register */
+
+.btn {
+  background-color: var(--color-purple) !important;
+  display: block;
+}
+
+/* margin */
+
+.text-home-page-margin {
+  margin-top: 5rem;
+  margin-bottom: 3.75rem !important;
+}
+
+/* testimonials */
+
+.testimonials img {
+  width: 150px;
+  height: 150px;
+}
+
+/* carousel */
+
+.carousel-section {
+  background-color: var(--color-purple);
+  padding: 90px 0;
+}
+
+.carousel-section img {
+  width: 150px;
+  height: 150px;
+}
+
+.carousel-item-content {
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+.arrow-size {
+  height: 60px !important;
+  width: 40px !important;
+}
+
+/* carousel video */
+
+.card-img-top {
+  object-fit: cover;
+}
+
+.play-icon {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* membership section */
+
+.membership-section {
+  background-color: var(--color-dark);
+}
+
+/* courses section */
+
+.bg-color-courses-section {
+  background-color: var(--color-purple);
+}
+
+.opacity-courses-section {
+  opacity: 30%;
+  border-radius: 0% !important;
+}
+
+/* footer */
+
+footer {
+  background-color: var(--color-dark);
+}
+
+@media screen and (max-width: 576px) {
+  /* nav */
+  .logo-container {
+    float: none;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 180px;
+  }
+
+  .logo-container img:first-child {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    max-width: 42px;
+  }
+
+  .nav-link p {
+    text-align: center;
+  }
+
+  /* home page title */
+  .display-1 {
+    font-size: 4rem !important;
+  }
+}
+
+/* quotes section Loader */
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #c271ff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
