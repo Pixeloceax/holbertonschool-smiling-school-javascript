@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  // quotes section
+  // quotes section [Home page, Pricing page]
   $(".loader").show();
   $.ajax({
     url: "https://smileschool-api.hbtn.info/quotes",
